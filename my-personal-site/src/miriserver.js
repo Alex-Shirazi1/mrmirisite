@@ -20,7 +20,7 @@ app.get('*', (req, res) => {
 // Define the port for the server to listen on
 // process.env.PORT is used for environments where the port is set in an environment variable, like cloud hosting platforms
 // If process.env.PORT is not set, default to 5000 for local development
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 9000;
 // Start the server and have it listen on the defined port
 app.listen(port);
 
