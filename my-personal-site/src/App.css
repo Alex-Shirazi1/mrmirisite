@@ -299,7 +299,8 @@ h2 {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-  height: 350px;
+  min-height: 350px;
+  overflow: hidden;
 }
 
 .projects {
@@ -407,7 +408,7 @@ h2 {
   left: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
 
   .profile-symbol {
     display: block;
@@ -442,6 +443,27 @@ h2 {
     background-color: #f9f9f9;
   }
 
+  .contact-component {
+    padding-top: 75px;
+    min-height: 800px;
+  }
+}
+
+@media (min-width: 950px) and (max-width: 1450px) {
+
+  .profile-section,
+  .info-section {
+    padding: 20px 0;
+  }
+
+  .experience {
+    width: 90%;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
   .contact-component {
     padding-top: 75px;
     min-height: 800px;
